@@ -25,7 +25,7 @@ stages:
       inputs:
         command: 'buildAndPush'
         Dockerfile: '$(Build.SourcesDirectory)/postgres/Dockerfile'
-        buildContext: '$(Build.SourcesDirectory)/postgres/**'
+        buildContext: '$(Build.SourcesDirectory)/postgres'
         #tags: '$(Build.BuildId)' # string. Optional. Use when command = build || command = push || command = buildAndPush. Tags. Default: $(Build.BuildId).
         #arguments: # string. Optional. Use when command != login && command != logout && command != buildAndPush. Arguments. 
         #addPipelineData: true # boolean. Add Pipeline metadata to image(s). Default: true.
